@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+#wrapper-div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#header .logo {
+    height: 65px;
+    width: 65px;
+    filter: invert(100%);
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.store-name {
+    padding-top: 20px;
+    margin-left: 48%;
+}
+
+#intro-section {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 20px; 
+}
+
+#sidebar {
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    height: 100vh; 
+    width: 200px;
+    overflow-y: auto;
+}
+
+.sidebar-logo {
+    height: 65px;
+    width: 65px;
+    filter: invert(100%);
+    margin-bottom: 20px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+#content-section {
+    margin-left: 240px; 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    flex: 1;
+}
+
+.guitar-item {
+    background-color: #404040;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.guitar-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.guitar-item:hover {
+    transform: scale(1); 
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+a:hover {
+    color: #f0f0f0; 
+}
+
+.guitar-item a h2 {
+    color: #ffffff;
+    font-size: 0.5 rem; 
+    transition: font-size 0.5s ease; 
+}
+
+.guitar-item:hover a h2 {
+    color: #8e8d8d;
+    font-size: 1.7rem; 
+}
+
+#footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+#footer img {
+    max-width: 70px;
+    height: auto;
+    filter: invert(100%);
+}
